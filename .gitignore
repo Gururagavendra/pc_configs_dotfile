@@ -1,0 +1,19 @@
+# Keep AI-tool and personal instruction files out of this public repository.
+.claude/
+.codex/
+claude/
+codex/
+CLAUDE.md
+AGENTS.md
+
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+**/auth.json
+**/credentials.json
+**/*.key
+**/*.pem
+
+# OS files
+.DS_Store

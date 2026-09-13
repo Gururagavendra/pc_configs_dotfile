@@ -1,0 +1,17 @@
+format = "$directory$python$git_branch $character"
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+format = "[$path]($style)"
+style = "bold #9ec89e"
+
+[python]
+format = ' [$symbol$virtualenv]($style)'
+style = "bold #ddd08c"
+symbol = " "
+
+[git_branch]
+format = ' [$symbol$branch]($style)'
+symbol = " "
+style = "bold #8ca0e8"

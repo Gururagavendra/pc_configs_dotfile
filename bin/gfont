@@ -1,0 +1,11 @@
+#!/bin/zsh
+# Swap Ghostty's primary font. Fallback line (icons) is preserved.
+cfg=~/.config/ghostty/config
+if [ -z "$1" ]; then
+  echo "current:"; grep -n "^font-family" $cfg
+  echo "\nusage: gfont \"MonaspiceXe Nerd Font Mono\""
+  exit 0
+fi
+awk -v f="$1" '/^font-family = /{if(!d){print "font-family = " f; d=1; next}} 1' $cfg > /tmp/gf.$$ \
+  && cat /tmp/gf.$$ > $cfg && rm -f /tmp/gf.$$
+echo "primary font -> $1   (reload Ghostty with cmd+shift+,)"

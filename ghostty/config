@@ -1,0 +1,25 @@
+theme = Starlight
+font-family = JetBrainsMono Nerd Font Mono
+
+# treat Option as Alt so word-jump keys reach the app
+macos-option-as-alt = true
+
+# thin white line between splits (Ghostty native, 1px, not resizable)
+split-divider-color = #ffffff
+
+
+# cmd+shift+r prompts for a name for the currently focused split
+# (only shows in the window titlebar when that split has focus - Ghostty
+# has no per-pane title bar; shell-integration-osc0 stops the shell
+# overwriting your name with cwd on the next prompt)
+keybind = super+shift+r=prompt_surface_title
+shell-integration-features = cursor,no-sudo,no-title,no-ssh-env,no-ssh-terminfo,path
+
+# font sizing / rendering
+font-size = 14
+font-feature = +liga
+font-thicken = false
+
+# roomier window
+window-padding-x = 14
+window-padding-y = 12

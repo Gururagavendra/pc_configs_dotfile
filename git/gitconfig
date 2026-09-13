@@ -1,0 +1,7 @@
+[user]
+	name = Guru Ragavendra
+	email = guruvelu85@gmail.com
+[includeIf "gitdir:~/guru-personal/achitor/"]
+	path = /Users/gururagavendra/.gitconfig-freelance
+[pull]
+	rebase = true
