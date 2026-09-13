@@ -6,7 +6,6 @@ Public, shareable configuration for my development environment.
 
 - `bin/` — utility scripts
 - `ghostty/` — Ghostty terminal configuration
-- `git/` — Git configuration and ignore rules
 - `starship/` — Starship prompt configuration
 - `zsh/` — Zsh configuration
 
